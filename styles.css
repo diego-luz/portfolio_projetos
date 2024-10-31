@@ -1,0 +1,102 @@
+/* Importação das fontes "Krona One" para títulos e "Montserrat" para descrições, disponibilizadas pelo Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilização geral do corpo do documento: 
+- Define a altura total da página para ocupar a viewport completa (100vh).
+- Aplica o modelo de caixa para que paddings e bordas sejam incluídos na largura e altura dos elementos (box-sizing: border-box).
+- Estabelece um fundo preto (#000) e um esquema de cores de texto em cinza claro (#F6F6F6) para contrastar com o fundo. */
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000;  
+    color: #F6F6F6; 
+}
+
+/* Estilos para a classe .apresentacao, que define a seção principal da página: 
+- Margens configuradas para centralizar o conteúdo na página.
+- Utiliza display flex para um layout flexível dos itens internos.
+- Alinha os itens ao centro verticalmente e distribui o espaço entre eles horizontalmente. */
+.apresentacao{
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilizações para a descrição geral da página, especificando:
+- O tamanho da fonte (36px) para destacar a importância do texto.
+- A família da fonte "Krona One", proporcionando um aspecto distintivo para títulos ou cabeçalhos.
+- Cor do texto em cinza claro (#f6f6f6) para manter a consistência com o esquema de cores.
+- White-space - Não limita o espaço da linha */
+.descricao_geral{
+    font-size: 30px;
+    font-family: "Krona One", sans-serif;
+    color: #f6f6f6;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Estilos para destacar o título, aplicando uma cor azul claro (#22D4FD) para chamar atenção. */
+.titulo_destaque{
+    color: #22D4FD;
+}
+
+/* Define o estilo para descrições pessoais:
+- Tamanho da fonte menor (24px) para criar uma hierarquia visual em relação ao título.
+- Fonte "Montserrat", sugerindo uma abordagem mais suave e acessível.
+- Mantém a cor do texto em cinza claro para consistência. */
+.descricao_pessoal{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Configurações para o conteúdo da apresentação, limitando a largura a 615px para garantir uma leitura confortável. */
+.apresentacao_conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+/* Aplica um reflexo à esquerda do elemento, com gradiente que vai de transparente a preto com 20% de opacidade. */
+/*  https://www.instagram.com/coding_dev_/ */
+.foto_pessoal{
+/*     width: 50vw; 
+/*     height: auto; 
+    -webkit-box-reflect: left 0 linear-gradient(to left, transparent, rgba(0, 0, 0, 0.2)); */
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px; /* bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* sombra suave */
+    transition: transform 0.3s ease; /* animação suave */
+    -webkit-box-reflect: left 0 linear-gradient(to left, transparent, rgba(0, 0, 0, 0.2));
+
+}
+/* Estilos para a seção de links da apresentação, utilizando novamente um layout flexível para espaçamento equitativo entre os links. */
+.apresentacao_links{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+/* Estilização dos links individuais:
+- Cor de fundo azul claro (#22D4FD) para destacá-los.
+- Largura fixa (280px) e alinhamento de texto centralizado para uma apresentação uniforme.
+- Bordas arredondadas (16px) para um visual mais moderno e amigável.
+- Tamanho da fonte (24px) e peso da fonte (600) para legibilidade e ênfase.
+- Padding vertical para aumentar a área de clique.
+- A fonte "Montserrat" é usada para manter a consistência com outros textos descritivos.
+- O texto é apresentado em preto (#000) para contraste com o fundo azul. */
+.apresenta_links{
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+}
+
