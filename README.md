@@ -29,11 +29,11 @@ Para executar use o parâmetro:
 
 - Substitua os parâmetros abaixo pela sua preferência:
 - --name portfolio_projetos
-- -p 8081:80
+- -p 8082:80
 - --network sua_rede_docker
 
 ```docker
-docker container run --name portfolio_projetos -d -p 8081:80 --network sua_rede_docker saberdl/portfolio_projetos:1.1
+docker container run --name portfolio_projetos -d -p 8082:80 --network sua_rede_docker saberdl/portfolio_projetos:1.1
 ```
 
 ## Captura de tela
