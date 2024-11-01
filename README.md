@@ -22,8 +22,7 @@ Link especifico:
 
 Não vou entrar em detalhes aqui sobre a imagem porém não há vulnerabilidade nela, algumas evidências abaixo:
 
-![image](https://github.com/user-attachments/assets/a13de394-3b0d-4be3-b946-6736cb9e3e78)
-![image](https://github.com/user-attachments/assets/ac452e18-444e-48a4-a86b-25bc0f6b5b16)
+![image](https://github.com/user-attachments/assets/887ca8fb-672d-443c-abfc-6481d0e2571c)
 
 Para executar use o parâmetro:
 
@@ -33,12 +32,13 @@ Para executar use o parâmetro:
 - --network sua_rede_docker
 
 ```docker
-docker container run --name portfolio_projetos -d -p 8081:80 --network sua_rede_docker saberdl/portfolio_projetos
+docker container run --name portfolio_projetos -d -p 8081:80 --network sua_rede_docker saberdl/portfolio_projetos:1.1
 ```
 
 ## Captura de tela
-![image](https://github.com/user-attachments/assets/d39a69d7-e254-412d-93a9-42d9ea8b8bdb)
-![image](https://github.com/user-attachments/assets/555db2c5-3d9c-47d5-8ba9-9212d3c23fe9)
+
+![image](https://github.com/user-attachments/assets/4868a827-1572-4667-9880-9ef24b22a860)
+
 
 🎞️eps1.1_ones-and-zer0es.mpeg
 
