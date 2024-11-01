@@ -1,0 +1,9 @@
+<svg width="95" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Texto Principal "saberdl" em minúsculas -->
+  <text x="2" y="20" font-family="Arial" font-weight="900" font-size="24" style="letter-spacing: -0.5px;">
+    <tspan fill="#ffffff">saberdl</tspan>
+  </text>
+  
+  <!-- Ponto no final com mais espaço -->
+  <circle cx="87" cy="19" r="3" fill="rgb(35,192,228)"/>
+</svg>

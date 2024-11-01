@@ -1,31 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaberDL | Projetos</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Icons Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <!--Menu(cabeçalho)  -->
-    <header></header>
-    <!-- Conteudo Principal -->
-    <main class="apresentacao">
-        <!-- Enfilernando elementos -->
-        <section class="apresentacao_conteudo">
-            <h1 class="descricao_geral">Profissional de T.I <strong class="titulo_destaque">estusiasta de Front-end!</strong></h1>
-            <p class="descricao_pessoal">Olá! Sou Diego Alves da Luz. Estou mergulhando nas artes do HTML e CSS. Vamos explorar juntos esse mundo criativo?</p>
-             <!-- Criando uma div para caso unico -->
-            <div class="apresentacao_links">
-            <!--Link  -->
-            <a class="apresenta_links" href="projetos.html" target="_blank">Projetos</a>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="SaberDL Logo">
+            </a>
+            <ul class="menu-links">
+                <li class="join-btn"><a href="https://github.com/diego-luz/">GitHub</a></li>
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            <h1>Confira os projetos no meu GitHub, onde posso explorar novas ideias e aprimorar iniciativas já existentes.</h1>
+            
+            <!-- Foto Perfil -->
+            <div class="profile-container">
+                <img class="foto_pessoal" src="images/imagem.png" alt="Foto Diego Alves da Luz">
             </div>
-        </section>  
-        <!--Foto  -->
-            <img class="foto_pessoal" src="./imagem.png" alt="Foto Diego Alves da Luz"> 
-    </main>
-    <!-- Rodape da pagina -->
-    <footer></footer>
+
+            <!-- Container dos Cards -->
+            <div class="card-container">
+                <!-- Card 1 -->
+                <a href="https://github.com/diego-luz/portfolio_simples" class="card-item">
+                    <div class="img-container">
+                        <img src="images/projetos/portfolio.png" alt="Portfólio Simples">
+                    </div>
+                    <span class="developer">HTML/CSS</span>
+                    <h3>Portfólio simples</h3>
+                    <p>Portfólio simples usando HTML e CSS.</p>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="https://github.com/diego-luz" class="card-item">
+                    <div class="img-container">
+                        <img src="images/projetos/uptime_kuma.jpg" alt="Uptime Kuma">
+                    </div>
+                    <span class="designer">Monitoramento</span>
+                    <h3>Uptime Kuma</h3>
+                    <p>Ferramenta de monitoramento auto-hospedada e fácil de usar.</p>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="#" class="card-item">
+                    <div class="img-container">
+                        <img src="/images/projetos/beszel.png" alt="Beszel">
+                    </div>
+                    <span class="editor">Docker</span>
+                    <h3>Beszel</h3>
+                    <p>Hub leve de monitoramento de recursos de servidor com dados históricos.</p>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </a>
+                 <!-- Card 4 -->
+                <a href="https://github.com/diego-luz" class="card-item">
+                    <div class="img-container">
+                        <img src="images/projetos/" alt="Novo">
+                    </div>
+                    <span class="designer">Novo</span>
+                    <h3>Novo</h3>
+                    <p>Novo</p>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </a>
+                 <!-- Novo Card  --> 
+                
+
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="copyright">© 2024 SaberDL. Desenvolvido por <a href="https://github.com/diego-luz" target="_blank">Diego Luz</a>. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+        
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+        
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
 </body>
 </html>
