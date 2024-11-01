@@ -1,7 +1,7 @@
 FROM scratch AS build
 LABEL maintainer="diego.saberdl@gmail.com"
 # Copie os arquivos do código-fonte para /app
-COPY portfolio2.0/* /app/
+COPY portfolio_projetos/* /app/
 WORKDIR /app
 ENV APP_VERSION=2.1
 
