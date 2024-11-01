@@ -11,6 +11,7 @@ Link: http://www.projetos.saberdl.dev.br
 ## Características
 
 Estrutura basica do site:
+
 ![image](https://github.com/diego-luz/portfolio_simples/assets/161847415/d7abb968-ad67-4e72-b8a2-949592f2572c)
 
 🤯 Este site está longe do ideal, a diversos pontos para melhorias, espero ir evoluindo este projeto.
