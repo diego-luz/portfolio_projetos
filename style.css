@@ -100,18 +100,12 @@ header .navbar {
     box-shadow: 0 4px 15px rgba(35, 192, 228, 0.3);
 }
 
-/* Container dos cards com efeito de blur */
+/* Container dos cards */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 40px;
-}
-
-/* Efeito de hover e blur nos cards */
-.card-container:hover > .card-item:not(:hover) {
-    filter: blur(2px); /* Quanto menor o valor, mais leve o efeito */
-    transform: scale(0.95);
 }
 
 /* Estilo dos cards */
@@ -224,11 +218,19 @@ header .navbar {
 
 /* Estilos responsivos */
 @media screen and (max-width: 900px) {
-    /* Ajustes do hero section para mobile */
-    .hero-section {
-        padding: 60px 20px 40px;
+    /* Ocultar título e imagem no mobile */
+    .hero-section .content h1,
+    .profile-container {
+        display: none;
     }
 
+    /* Ajustes do hero section para mobile */
+    .hero-section {
+        min-height: auto;
+        padding: 80px 0 20px 0;
+    }
+
+    /* Menu mobile */
     header.show-mobile-menu::before {
         content: "";
         height: 100%;
@@ -278,37 +280,11 @@ header .navbar {
         display: block;
     }
 
-    /* Ajustes de layout para mobile */
-    .hero-section .content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hero-section .content h1 {
-        order: -1;
-        text-align: center;
-        font-size: 1.8rem;
-        line-height: 1.3;
-        margin: 20px 0 15px 0;
-        padding: 0 10px;
-    }
-
-    .profile-container {
-        text-align: center;
-        margin: 15px 0 25px 0;
-        padding: 0;
-    }
-
-    .foto_pessoal {
-        width: 180px;
-        height: 180px;
-    }
-
     /* Ajuste do container de cards */
     .card-container {
         grid-template-columns: 1fr;
-        padding: 0 10px;
-        margin-top: 20px;
+        padding: 0 20px;
+        margin-top: 0;
         gap: 15px;
     }
 
@@ -320,12 +296,6 @@ header .navbar {
     .card-item .img-container {
         height: 180px;
         margin-bottom: 15px;
-    }
-
-    /* Ajuste do efeito de blur para mobile */
-    .card-container:hover > .card-item:not(:hover) {
-        filter: blur(2px); /* Quanto menor o valor, mais leve o efeito */
-        transform: scale(0.98);
     }
     
     .card-item:hover {
