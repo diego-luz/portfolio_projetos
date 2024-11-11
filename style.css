@@ -96,8 +96,9 @@ header .navbar {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #23C0E4;
-    box-shadow: 0 4px 15px rgba(35, 192, 228, 0.3);
+    border: 3px solid rgba(35, 192, 228, 0.8);
+    box-shadow: 0 4px 15px rgba(35, 192, 228, 0.2);
+    transition: all 0.4s ease;
 }
 
 /* Container dos cards */
@@ -106,23 +107,39 @@ header .navbar {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 40px;
+    padding: 20px;
+}
+
+/* Aplica blur apenas nos cards que vêm depois do card com hover */
+.card-item:hover ~ .card-item {
+    filter: blur(1px);
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+
+/* Estilo do card em hover */
+.card-item:hover {
+    filter: blur(0) !important;
+    opacity: 1 !important;
+    transform: scale(1.05) !important;
+    background: rgba(17, 17, 17, 0.9);
+    box-shadow: 0 8px 20px rgba(35, 192, 228, 0.3);
+    z-index: 1;
 }
 
 /* Estilo dos cards */
 .card-item {
-    background: #111;
+    background: rgba(17, 17, 17, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 26px;
     border-radius: 16px;
-    border: 1px solid #333;
+    border: 1px solid rgba(51, 51, 51, 0.3);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     display: flex;
     flex-direction: column;
-}
-
-.card-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(35, 192, 228, 0.2);
+    position: relative;
 }
 
 .card-item .img-container {
@@ -190,12 +207,13 @@ header .navbar {
     border: 1px solid #23C0E4;
     border-radius: 50%;
     margin-top: auto;
-    transition: 0.2s ease;
+    transition: all 0.4s ease;
 }
 
 .card-item:hover .arrow {
     background: #23C0E4;
     color: #111;
+    transform: rotate(0deg);
 }
 
 /* Botões do menu mobile */
@@ -218,16 +236,29 @@ header .navbar {
 
 /* Estilos responsivos */
 @media screen and (max-width: 900px) {
-    /* Ocultar título e imagem no mobile */
-    .hero-section .content h1,
-    .profile-container {
-        display: none;
-    }
-
     /* Ajustes do hero section para mobile */
     .hero-section {
         min-height: auto;
-        padding: 80px 0 20px 0;
+        padding: 80px 20px 20px;
+    }
+
+    .hero-section .content h1 {
+        font-size: 2rem;
+        line-height: 1.4;
+        text-align: center;
+        margin: 20px auto 30px;
+    }
+
+    /* Ajustes da foto de perfil para mobile */
+    .profile-container {
+        text-align: center;
+        margin: 0 auto 40px;
+        padding: 0;
+    }
+
+    .foto_pessoal {
+        width: 200px;
+        height: 200px;
     }
 
     /* Menu mobile */
@@ -298,7 +329,14 @@ header .navbar {
         margin-bottom: 15px;
     }
     
+    /* Ajuste do efeito hover para mobile */
+    .card-item:hover ~ .card-item {
+        filter: blur(1px);
+        opacity: 0.8;
+        transform: scale(0.99);
+    }
+
     .card-item:hover {
-        transform: scale(1.02);
+        transform: scale(1.02) !important;
     }
 }
