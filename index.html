@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaberDL | Projetos</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16"  href="/images/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Icons Link -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
-    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">
-                <img src="images/logo.svg" alt="SaberDL Logo">
-            </a>
             <ul class="menu-links">
                 <li class="join-btn"><a href="https://github.com/diego-luz/">GitHub</a></li>
                 <span id="close-menu-btn" class="material-symbols-outlined">close</span>
@@ -30,22 +25,25 @@
 
     <section class="hero-section">
         <div class="content">
-            <h1>Confira os projetos no meu GitHub, onde posso explorar novas ideias e aprimorar iniciativas já existentes.</h1>
-            
-            <!-- Foto Perfil -->
-            <div class="profile-container">
-                <img class="foto_pessoal" src="images/imagem.png" alt="Foto Diego Alves da Luz">
+            <!-- Logo principal -->
+            <div class="main-logo">
+                <img src="images/logo.svg" alt="SaberDL Logo">
             </div>
 
-            <!-- Container dos Cards -->
+            <!-- Barra de pesquisa -->
+            <div class="search-container">
+                <input type="text" class="search-input"
+                    placeholder="Filtrar por categoria ou nome da solução (ex: HTML,Documentação...)" id="searchInput">
+            </div>
             <div class="card-container">
                 <!-- Card 1 -->
                 <a href="https://github.com/diego-luz/portfolio_simples" class="card-item">
                     <div class="img-container">
-                        <img src="images/projetos/portfolio.png" alt="Portfólio Simples">
+                        <img src="https://private-user-images.githubusercontent.com/161847415/380471711-d39a69d7-e254-412d-93a9-42d9ea8b8bdb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzE5ODMwNzcsIm5iZiI6MTczMTk4Mjc3NywicGF0aCI6Ii8xNjE4NDc0MTUvMzgwNDcxNzExLWQzOWE2OWQ3LWUyNTQtNDEyZC05M2E5LTQyZDllYThiOGJkYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTExOVQwMjE5MzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hY2RhYTI5OGRhNmI3MjVhYjVkMGIyZjZjMGI0MTdlZDY0OGM4NmU2OWQ2ZTgyZGZiOTgwMGUwMmEzYzVmOWQ0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.1NSG8-Oo8DFV0k97g3jllLPUoyy4vvjJ1Ye6mqFwymE"
+                            alt=" Portfólio simples ">
                     </div>
-                    <span class="developer">HTML/CSS</span>
-                    <h3>Portfólio simples</h3>
+                    <span class="designer">HTML/CSS</span>
+                    <h3> Portfólio simples </h3>
                     <p>Portfólio simples usando HTML e CSS.</p>
                     <div class="arrow">
                         <i class="fas fa-arrow-right card-icon"></i>
@@ -53,13 +51,14 @@
                 </a>
 
                 <!-- Card 2 -->
-                <a href="https://github.com/diego-luz" class="card-item">
+                <a href="https://github.com/louislam/uptime-kuma" class="card-item">
                     <div class="img-container">
-                        <img src="images/projetos/uptime_kuma.jpg" alt="Uptime Kuma">
+                        <img src="https://user-images.githubusercontent.com/1336778/212262296-e6205815-ad62-488c-83ec-a5b0d0689f7c.jpg"
+                            alt="Uptime Kuma">
                     </div>
                     <span class="designer">Monitoramento</span>
                     <h3>Uptime Kuma</h3>
-                    <p>Ferramenta de monitoramento auto-hospedada e fácil de usar.</p>
+                    <p>Ferramenta de monitoramento auto-hospedada e fácil de usar</p>
                     <div class="arrow">
                         <i class="fas fa-arrow-right card-icon"></i>
                     </div>
@@ -68,7 +67,8 @@
                 <!-- Card 3 -->
                 <a href="https://github.com/henrygd/beszel" class="card-item">
                     <div class="img-container">
-                        <img src="/images/projetos/beszel.png" alt="Beszel">
+                        <img src="https://camo.githubusercontent.com/49a777d47b027b633444519e4d9f62b1327e3155e511760b8029124c7ff03d91/68747470733a2f2f68656e727967642d6173736574732e622d63646e2e6e65742f6265737a656c2f73637265656e73686f742e706e67"
+                            alt="Beszel">
                     </div>
                     <span class="designer">Monitoramento</span>
                     <h3>Beszel</h3>
@@ -77,22 +77,25 @@
                         <i class="fas fa-arrow-right card-icon"></i>
                     </div>
                 </a>
-                 <!-- Card 4 -->
+
+                <!-- Card 4 -->
                 <a href="https://github.com/BookStackApp/BookStack" class="card-item">
                     <div class="img-container">
-                        <img src="images/projetos/BookStack.jpg" alt="Novo">
+                        <img src="https://www.bookstackapp.com/images/bookstack-hero-screenshot.webp" alt="BookStack">
                     </div>
                     <span class="designer">Documentação</span>
                     <h3>BookStack</h3>
-                    <p>Uma plataforma para armazenar e organizar informações e documentação. </p>
+                    <p>Uma plataforma para armazenar e organizar informações e documentação.</p>
                     <div class="arrow">
                         <i class="fas fa-arrow-right card-icon"></i>
                     </div>
                 </a>
-                 <!-- Card 5 -->
-                 <a href="https://github.com/Zavy86/WikiDocs" class="card-item">
+
+                <!-- Card 5 -->
+                <a href="https://github.com/Zavy86/WikiDocs" class="card-item">
                     <div class="img-container">
-                        <img src="images/projetos/WikiDocs.png" alt="Novo">
+                        <img src="https://camo.githubusercontent.com/089ecec467db489ea60b1fddfbca57eace8f00dcd137f694f4250f109f5a9bd6/68747470733a2f2f77696b69646f63732e69742f64617461736574732f646f63756d656e74732f686f6d65706167652f636f7665722d736964652d70726f6a6563742d77696b69646f63732d796f75747562652e6a7067"
+                            alt="WikiDocs">
                     </div>
                     <span class="designer">Documentação</span>
                     <h3>WikiDocs</h3>
@@ -100,29 +103,52 @@
                     <div class="arrow">
                         <i class="fas fa-arrow-right card-icon"></i>
                     </div>
-                </a>                
-                 <!-- Novo Card  --> 
+                </a>
+
+                <!-- Card 6 -->
+                <a href="https://github.com/passbolt/passbolt_api" class="card-item">
+                    <div class="img-container">
+                        <img src="https://www.passbolt.com/_next/image?url=%2Fimages%2Fhome%2Fhero.png&w=1920&q=75"
+                            alt="Passbolt">
+                    </div>
+                    <span class="designer">Gerenciador de senhas</span>
+                    <h3>Passbolt</h3>
+                    <p>Gerenciador de senhas de código aberto e de segurança em primeiro lugar para equipes. Ele ajuda
+                        as organizações a centralizar, organizar e compartilhar senhas e segredos com segurança.</p>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right card-icon"></i>
+                    </div>
+                </a>
                 
+                <script>
+                    const header = document.querySelector("header");
+                    const hamburgerBtn = document.querySelector("#hamburger-btn");
+                    const closeMenuBtn = document.querySelector("#close-menu-btn");
 
-                
-            </div>
-        </div>
-    </section>
+                    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+                    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 
-    <footer style="text-align: center; padding: 02px; background-color: #23C0E4;">
-        <p>Desenvolvido por Diego Luz</p>
-    </footer>
+                    const searchInput = document.getElementById('searchInput');
+                    const cards = document.querySelectorAll('.card-item');
 
-    <script>
-        const header = document.querySelector("header");
-        const hamburgerBtn = document.querySelector("#hamburger-btn");
-        const closeMenuBtn = document.querySelector("#close-menu-btn");
-        
-        // Toggle mobile menu on hamburger button click
-        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
-        
-        // Close mobile menu on close button click
-        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
-    </script>
+                    searchInput.addEventListener('input', function (e) {
+                        const searchTerm = e.target.value.toLowerCase();
+
+                        cards.forEach(card => {
+                            const category = card.querySelector('span').textContent.toLowerCase();
+                            const title = card.querySelector('h3').textContent.toLowerCase();
+                            const description = card.querySelector('p').textContent.toLowerCase();
+
+                            if (category.includes(searchTerm) ||
+                                title.includes(searchTerm) ||
+                                description.includes(searchTerm)) {
+                                card.style.display = 'flex';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    });
+                </script>
 </body>
+
 </html>

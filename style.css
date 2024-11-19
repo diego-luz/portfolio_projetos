@@ -1,7 +1,5 @@
-/* Importando fonte Google - Fira Sans */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
 
-/* Reset básico e configurações gerais */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +11,6 @@ body {
     background: #1B1B1D;
 }
 
-/* Estilos do cabeçalho */
 header {
     position: fixed;
     left: 0;
@@ -23,123 +20,110 @@ header {
     padding: 20px;
 }
 
-header .navbar {
+.navbar {
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
-.navbar .menu-links {
+.menu-links {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 30px;
 }
 
-.navbar .menu-links li a {
+.menu-links li a {
     color: #fff;
     font-weight: 500;
     text-decoration: none;
     transition: 0.2s ease;
 }
 
-.navbar .menu-links li a:hover {
+.menu-links li a:hover {
     color: #23C0E4;
 }
 
-.navbar .menu-links .join-btn a {
+.join-btn a {
     border: 1px solid #fff;
     padding: 8px 15px;
     border-radius: 4px;
 }
 
-.navbar .menu-links .join-btn a:hover {
+.join-btn a:hover {
     color: #fff;
     border-color: transparent;
     background: #23C0E4;
 }
 
-/* Seção principal (hero) */
+/* Logo principal */
+.main-logo {
+    text-align: center;
+    margin: 80px auto 0;
+    max-width: 200px;
+}
+
+.main-logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Barra de pesquisa */
+.search-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid #23C0E4;
+    background: rgba(17, 17, 17, 0.7);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(35, 192, 228, 0.3);
+}
+
+.search-input::placeholder {
+    color: #666;
+}
+
 .hero-section {
     min-height: 100vh;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    padding: 100px 20px;
+    padding: 20px;
 }
 
-.hero-section .content {
+.content {
     max-width: 1280px;
     margin: 0 auto;
-    width: 100%;
 }
 
-.hero-section .content h1 {
-    color: #fff;
-    font-size: 3rem;
-    max-width: 800px;
-    line-height: 65px;
-    margin-bottom: 50px;
-}
-
-/* Container da foto de perfil */
-.profile-container {
-    text-align: right;
-    margin: -275px 0 20px 0;
-    padding-right: 20px;
-}
-
-.foto_pessoal {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid rgba(35, 192, 228, 0.8);
-    box-shadow: 0 4px 15px rgba(35, 192, 228, 0.2);
-    transition: all 0.4s ease;
-}
-
-/* Container dos cards */
+/* Grid de cards */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    margin-top: 40px;
     padding: 20px;
 }
 
-/* Aplica blur apenas nos cards que vêm depois do card com hover */
-.card-item:hover ~ .card-item {
-    filter: blur(1px);
-    opacity: 0.7;
-    transform: scale(0.98);
-}
-
-/* Estilo do card em hover */
-.card-item:hover {
-    filter: blur(0) !important;
-    opacity: 1 !important;
-    transform: scale(1.05) !important;
-    background: rgba(17, 17, 17, 0.9);
-    box-shadow: 0 8px 20px rgba(35, 192, 228, 0.3);
-    z-index: 1;
-}
-
-/* Estilo dos cards */
 .card-item {
     background: rgba(17, 17, 17, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     padding: 26px;
     border-radius: 16px;
     border: 1px solid rgba(51, 51, 51, 0.3);
     text-decoration: none;
-    transition: all 0.4s ease;
     display: flex;
     flex-direction: column;
-    position: relative;
+    transition: background 0.3s ease;
 }
 
 .card-item .img-container {
@@ -150,7 +134,7 @@ header .navbar {
     margin-bottom: 20px;
 }
 
-.card-item img {
+.card-item .img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -179,7 +163,6 @@ header .navbar {
     line-height: 1.5;
 }
 
-/* Variações das tags */
 .developer {
     background-color: rgba(35, 192, 228, 0.1);
     color: #23C0E4;
@@ -195,28 +178,27 @@ header .navbar {
     color: #F6F6F6;
 }
 
-/* Seta dos cards */
 .card-item .arrow {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(-35deg);
+    transform: rotate(-35deg) translateX(0);
     height: 40px;
     width: 40px;
     color: #23C0E4;
     border: 1px solid #23C0E4;
     border-radius: 50%;
     margin-top: auto;
-    transition: all 0.4s ease;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-item:hover .arrow {
     background: #23C0E4;
     color: #111;
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateX(5px);
 }
 
-/* Botões do menu mobile */
+/* Menu mobile */
 .navbar #hamburger-btn {
     color: #fff;
     cursor: pointer;
@@ -234,34 +216,21 @@ header .navbar {
     font-size: 1.7rem;
 }
 
-/* Estilos responsivos */
 @media screen and (max-width: 900px) {
-    /* Ajustes do hero section para mobile */
+    .main-logo {
+        margin: 60px auto 0;
+        max-width: 150px;
+    }
+
     .hero-section {
         min-height: auto;
         padding: 80px 20px 20px;
     }
 
-    .hero-section .content h1 {
-        font-size: 2rem;
-        line-height: 1.4;
-        text-align: center;
-        margin: 20px auto 30px;
+    .search-container {
+        margin: 20px auto;
     }
 
-    /* Ajustes da foto de perfil para mobile */
-    .profile-container {
-        text-align: center;
-        margin: 0 auto 40px;
-        padding: 0;
-    }
-
-    .foto_pessoal {
-        width: 200px;
-        height: 200px;
-    }
-
-    /* Menu mobile */
     header.show-mobile-menu::before {
         content: "";
         height: 100%;
@@ -311,15 +280,12 @@ header .navbar {
         display: block;
     }
 
-    /* Ajuste do container de cards */
     .card-container {
         grid-template-columns: 1fr;
         padding: 0 20px;
-        margin-top: 0;
         gap: 15px;
     }
 
-    /* Ajustes nos cards para mobile */
     .card-item {
         padding: 20px;
     }
@@ -327,16 +293,5 @@ header .navbar {
     .card-item .img-container {
         height: 180px;
         margin-bottom: 15px;
-    }
-    
-    /* Ajuste do efeito hover para mobile */
-    .card-item:hover ~ .card-item {
-        filter: blur(1px);
-        opacity: 0.8;
-        transform: scale(0.99);
-    }
-
-    .card-item:hover {
-        transform: scale(1.02) !important;
     }
 }

@@ -3,7 +3,7 @@ LABEL maintainer="diego.saberdl@gmail.com"
 # Copie os arquivos do código-fonte para /app
 COPY . /app/
 WORKDIR /app
-ENV APP_VERSION=2.2
+ENV APP_VERSION=2.3
 
 FROM alpine:3.20.3
 RUN apk update && \
