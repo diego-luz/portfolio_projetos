@@ -37,7 +37,8 @@ docker container run --name portfolio_projetos -d -p 8082:80 --network sua_rede_
 
 ## Captura de tela
 
-![image](https://github.com/user-attachments/assets/4868a827-1572-4667-9880-9ef24b22a860)
+![image](https://github.com/user-attachments/assets/e8a4fda6-87c9-44e7-858f-85499a3aad71)
+
 
 
 🎞️eps1.1_ones-and-zer0es.mpeg
