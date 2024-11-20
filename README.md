@@ -6,7 +6,7 @@ Este site foi baseado no site: https://www.codingnepalweb.com/create-responsive-
 
 Realizado algumas modificações e ajustes também com o https://claude.ai/ .
 
-Link: http://www.projetos.saberdl.dev.br
+Link: [http://www.projetos.saberdl.dev.br](https://projetos.saberdl.dev.br/)
 
 ## Características
 
@@ -14,7 +14,6 @@ Estrutura basica do site:
 
 ![image](https://github.com/diego-luz/portfolio_simples/assets/161847415/d7abb968-ad67-4e72-b8a2-949592f2572c)
 
-🤯 Este site está longe do ideal, a diversos pontos para melhorias, espero ir evoluindo este projeto.
  
 ## 🐳 Crei um docker pronto ⭐
 
@@ -33,7 +32,7 @@ Para executar use o parâmetro:
 - --network sua_rede_docker
 
 ```docker
-docker container run --name portfolio_projetos -d -p 8082:80 --network sua_rede_docker saberdl/portfolio_projetos:1.6
+docker container run --name portfolio_projetos -d -p 8082:80 --network sua_rede_docker saberdl/portfolio_projetos:1.7
 ```
 
 ## Captura de tela
